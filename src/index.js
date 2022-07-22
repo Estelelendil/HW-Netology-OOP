@@ -1,5 +1,6 @@
-import './css/style.css';
+import {
+  Swordsman, Bowman, Magician, Daemon, Undead, Zombie,
+} from './js/basic';
 
-import './js/app';
-
-// TODO: write your code in app.js
+const pers = new Daemon('Larry');
+console.log(pers);
