@@ -1,8 +1,13 @@
+// eslint-disable-next-line max-classes-per-file
 class Character {
   health = 100;
+
   level = 1;
+
   attack;
+
   defence;
+
   constructor(name, type) {
     this.name = name;
     this.type = type;
@@ -14,10 +19,10 @@ class Character {
     }
   }
 }
-
+export default Character;
 export class Bowman extends Character {
   constructor(name) {
-    super(name,  'Bowman');
+    super(name, 'Bowman');
     this.attack = 25;
     this.defence = 25;
   }
@@ -25,7 +30,6 @@ export class Bowman extends Character {
 
 export class Swordsman extends Character {
   constructor(name) {
-   
     super(name, 'Swordsman');
     this.attack = 40;
     this.defence = 10;

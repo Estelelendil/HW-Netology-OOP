@@ -1,6 +1,7 @@
 {
+  "parser": "@babel/eslint-parser",
   "extends": "airbnb-base",
-  "plugins": ["babel"],
+  "plugins": ["@babel"],
   "env": {
      "es6": true,
      "browser": true,
@@ -12,6 +13,6 @@
       "LabeledStatement",
       "WithStatement"
     ],
-    "babel/semi": true
+    "@babel/semi": 1
   }
 }
